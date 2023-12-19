@@ -1,79 +1,148 @@
-# About 
+# About archihecture
 
 my-app/
+
 ├── public/
-│   ├── index.html
-│   ├── favicon.ico
-│   └── ...
+
+│ ├── index.html
+
+│ ├── favicon.ico
+
+│ └── ...
+
 ├── src/
-│   ├── assets/              # Static resources (images, fonts, styles)
-│   │   ├── images/
-│   │   ├── styles/
-│   │   └── ...
-│   ├── components/          # Reusable components
-│   │   ├── Button/
-│   │   │   ├── Button.tsx
-│   │   │   └── Button.test.tsx
-│   │   ├── Card/
-│   │   │   ├── Card.tsx
-│   │   │   └── Card.test.tsx
-│   │   └── ...
-│   ├── pages/               # Page components
-│   │   ├── Home/
-│   │   │   ├── Home.tsx
-│   │   │   └── Home.test.tsx
-│   │   ├── Product/
-│   │   │   ├── Product.tsx
-│   │   │   └── Product.test.tsx
-│   │   └── ...
-│   ├── hooks/               # Custom hooks
-│   │   ├── useApi.ts
-│   │   └── ...
-│   ├── i18n/                # Localization configuration and translations
-│   │   ├── en/
-│   │   ├── ru/
-│   │   └── i18nConfig.ts
-│   ├── api/                 # API interaction layer
-│   │   ├── index.ts
-│   │   ├── authApi.ts
-│   │   └── productApi.ts
-│   ├── types/               # Global TypeScript types
-│   │   ├── index.ts
-│   │   ├── product.d.ts
-│   │   └── ...
-│   ├── utils/               # Utility functions
-│   │   ├── constants.ts
-│   │   ├── helpers.ts
-│   │   └── ...
-│   ├── routes/              # Routing configuration
-│   │   ├── PrivateRoute.tsx
-│   │   └── Routes.tsx
-│   ├── store/               # Application state management (Redux/MobX/Context API)
-│   │   ├── index.ts
-│   │   ├── actions/
-│   │   ├── reducers/
-│   │   └── ...
-│   ├── App.tsx              # Main application component
-│   ├── index.tsx            # Application entry point
-│   └── react-app-env.d.ts   # Specific types for Create React App
-├── .env                     # Environment variables configuration
+
+│ ├── assets/ # Static resources (images, fonts, styles)
+
+│ │ ├── images/
+
+│ │ ├── styles/
+
+│ │ └── ...
+
+│ ├── components/ # Reusable components
+
+│ │ ├── Button/
+
+│ │ │ ├── Button.tsx
+
+│ │ │ └── Button.test.tsx
+
+│ │ ├── Card/
+
+│ │ │ ├── Card.tsx
+
+│ │ │ └── Card.test.tsx
+
+│ │ └── ...
+
+│ ├── pages/ # Page components
+
+│ │ ├── Home/
+
+│ │ │ ├── Home.tsx
+
+│ │ │ └── Home.test.tsx
+
+│ │ ├── Product/
+
+│ │ │ ├── Product.tsx
+
+│ │ │ └── Product.test.tsx
+│ │ └── ...
+
+│ ├── hooks/ # Custom hooks
+
+│ │ ├── useApi.ts
+
+│ │ └── ...
+│ ├── locales/ # Localization configuration and translations
+
+│ │ ├── en/
+
+│ │ ├── ru/
+
+│ │ └── localesConfig.ts
+
+│ ├── api/ # API interaction layer
+
+│ │ ├── index.ts
+
+│ │ ├── authApi.ts
+
+│ │ └── productApi.ts
+
+│ ├── types/ # Global TypeScript types
+
+│ │ ├── index.ts
+
+│ │ ├── product.d.ts
+
+│ │ └── ...
+
+│ ├── utils/ # Utility functions
+
+│ │ ├── constants.ts
+
+│ │ ├── helpers.ts
+
+│ │ └── ...
+
+│ ├── routes/ # Routing configuration
+
+│ │ ├── PrivateRoute.tsx
+
+│ │ └── Routes.tsx
+
+│ ├── store/ # Application state management (Redux/MobX/Context API)
+
+│ │ ├── index.ts
+
+│ │ ├── actions/
+
+│ │ ├── reducers/
+
+│ │ └── ...
+
+│ ├── App.tsx # Main application component
+
+│ ├── index.tsx # Application entry point
+
+│ └── react-app-env.d.ts # Specific types for Create React App
+
+├── .env # Environment variables configuration
+
 ├── package.json
-├── tsconfig.json            # TypeScript configuration
+
+├── tsconfig.json # TypeScript configuration
+
 └── ...
+
 
 In this structure:
 
 assets/ contains static files such as images and styles.
+
 components/ contains reusable components, each in its own folder with its own tests.
+
 pages/ contains components that represent the pages of the application, also with tests.
+
 hooks/ contains custom React hooks.
+
 i18n/ contains settings for localization and folders with translations for each language.
+
 api/ contains functions for interacting with the API.
+
 types/ contains TypeScript type definitions and interfaces.
+
 utils/ contains utility functions and constants.
+
 routes/ contains components and routing configuration.
+
 store/ contains everything related to application state management (if Redux, MobX, or another library/approach is used).
+
 App.tsx is the root component that usually contains routing and the overall page structure.
+
 index.tsx is the entry point of the application where the root component App is rendered.
 
 
