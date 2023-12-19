@@ -129,7 +129,7 @@ pages/ contains components that represent the pages of the application, also wit
 
 hooks/ contains custom React hooks.
 
-i18n/ contains settings for localization and folders with translations for each language.
+locales/ contains settings for localization and folders with translations for each language.
 
 api/ contains functions for interacting with the API.
 
